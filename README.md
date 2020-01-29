@@ -12,5 +12,11 @@
      - User name / PWD: sys/Oradoc_db1
      - Oracle bash: docker exec -it <Oracle-DB> bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
    
+## Oracle comments: 
+   - Multiline comments: `/*..*/`
+   - Single line comments: `--`
+   
+   
+   
    
   
