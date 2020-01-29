@@ -16,6 +16,15 @@
    - Multiline comments: `/*..*/`
    - Single line comments: `--`
    
+## Select statements:
+   - <img src="https://github.com/eshita19/oracle-db/blob/master/operator_precedence.png"></img>
+   - https://github.com/eshita19/oracle-db/blob/master/select.sql
+   
+##  Grouping functions:
+   - <img src="https://github.com/eshita19/oracle-db/blob/master/group_funcs.png"></img>
+   - https://github.com/eshita19/oracle-db/blob/master/multi-row-func.sql
+   
+   
    
    
    
