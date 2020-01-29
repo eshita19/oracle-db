@@ -24,6 +24,9 @@
    - <img src="https://github.com/eshita19/oracle-db/blob/master/group_funcs.png"></img>
    - https://github.com/eshita19/oracle-db/blob/master/multi-row-func.sql
    
+## Multi Table joins:
+   - https://github.com/eshita19/oracle-db/blob/master/multi-table.sql
+   
    
    
    
