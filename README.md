@@ -16,16 +16,25 @@
    - Multiline comments: `/*..*/`
    - Single line comments: `--`
    
-## Select statements:
+## Select statements:SELECT
    - <img src="https://github.com/eshita19/oracle-db/blob/master/operator_precedence.png"></img>
    - https://github.com/eshita19/oracle-db/blob/master/select.sql
    
-##  Grouping functions:
+##  Grouping functions: COUNT, AVG, SUM, MIN, MAX
    - <img src="https://github.com/eshita19/oracle-db/blob/master/group_funcs.png"></img>
    - https://github.com/eshita19/oracle-db/blob/master/multi-row-func.sql
    
-## Multi Table joins:
+## Multi Table joins: JOIN USING, JOIN ON
    - https://github.com/eshita19/oracle-db/blob/master/multi-table.sql
+   
+## Subqueries:   
+   - Single row : Only one row output from subquery.
+   - Multi row: Multiple rows retunred by subquery: (IN, ANY, ALL, EXISTS)
+   - https://github.com/eshita19/oracle-db/blob/master/subqueries.sql
+   
+   
+   
+   
    
    
    
