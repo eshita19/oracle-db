@@ -16,6 +16,12 @@
    - Multiline comments: `/*..*/`
    - Single line comments: `--`
    
+## Types of SQL statements:
+   - Data manipulation Language: SELECT, INSERT, UPDATE, DELETE, MERGE
+   - Data definition language: CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT
+   - Data control language: GRANT, REVOKE
+   - Transaction - COMMIT, ROLLBACK, SAVEPOINT
+   
 ## Select statements:SELECT
    - <img src="https://github.com/eshita19/oracle-db/blob/master/operator_precedence.png"></img>
    - https://github.com/eshita19/oracle-db/blob/master/select.sql
