@@ -51,6 +51,8 @@
     - SAVEPOINT name: marks a savepoint within current transaction.
     - ROLLBACK: ends the current transaction by discarding all pending changes.
     - ROLLBACK TO SAVEPOINT name: rollbacks the current transaction to specified savepoint, discarding any pending changes after the savepoint.
+  - Auto commit occurs - DDL, DCL, normal exit from SQL developer
+  - Auto Rollback of pending transactions - Abnormal termination of sql developer or system failure.
     
    
    
