@@ -46,13 +46,20 @@
   - A database transaction symbolizes a unit of work performed within a database management system against a database, and treated in a coherent and reliable way independent of other transactions.
   - Transactions using : DML, DDL and DCL stmts.
   - Database transactions must be atomic, consistent, isolated and durable--summarized as the ACID acronym.
-  - Explicit transaction control statements:
+  - **Explicit transaction control statements**:
     - COMMIT: commit ends transaction by making all pending changes permanent.
     - SAVEPOINT name: marks a savepoint within current transaction.
     - ROLLBACK: ends the current transaction by discarding all pending changes.
     - ROLLBACK TO SAVEPOINT name: rollbacks the current transaction to specified savepoint, discarding any pending changes after the savepoint.
   - Auto commit occurs - DDL, DCL, normal exit from SQL developer
   - Auto Rollback of pending transactions - Abnormal termination of sql developer or system failure.
+  - **State of data before COMMIT or ROLLBACK**:
+    - Previous state of data can be recovered.
+    - Current session can review the changes made in current transaction by issuing select statements.
+    - Other session cannot view the results of DML stmts issues in this session.
+    - The affected rows are locked. Other sessions cannot change data in current session.
+    
+    
     
    
    
