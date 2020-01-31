@@ -38,6 +38,9 @@
    - Multi row: Multiple rows retunred by subquery: (IN, ANY, ALL, EXISTS)
    - https://github.com/eshita19/oracle-db/blob/master/subqueries.sql
    
+## DML:
+   - https://github.com/eshita19/oracle-db/blob/master/dml.sql
+   
    
    
    
