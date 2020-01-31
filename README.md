@@ -58,10 +58,10 @@
     - Current session can review the changes made in current transaction by issuing select statements.
     - Other session cannot view the results of DML stmts issues in this session.
     - The affected rows are locked. Other sessions cannot change data in current session.
-  - **COMMIT ROLLBACK scenarios**:
+  - **COMMIT, ROLLBACK, SAVEPOINT scenarios**:
     - Multiple DMLs followed by DCL will result in autocommit, as DCL will do the autocommit. Hence DML stmts doesn't required autocommit.
     - If any DML stmt fails during transaction, only it's changes will be rollbacked. We need to explicitly use rollback for other previous statements.
-    
+    - Savepoint is like talking snapshots of the current state of transaction. Declaration `SAVEPOINT A`. We can revert to particular snapshot by calling `ROLLBACK TO SAVEPOINT A`.
     
     
 
