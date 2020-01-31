@@ -58,6 +58,9 @@
     - Current session can review the changes made in current transaction by issuing select statements.
     - Other session cannot view the results of DML stmts issues in this session.
     - The affected rows are locked. Other sessions cannot change data in current session.
+  - **Commit Rollback scenarios**:
+    - 
+    
     
     
     
