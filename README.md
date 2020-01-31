@@ -64,6 +64,7 @@
     - Savepoint is like talking snapshots of the current state of transaction. Declaration `SAVEPOINT A`. We can revert to particular snapshot by calling `ROLLBACK TO SAVEPOINT A`.
   - **Locking the record using SELECT**:
     - `SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = 100 FOR UPDATE`: Using `For UPDATE`, the record will be locked even with select statement. So no other sesssion can manipulate record. It will be unlocked only when the previous session calls commit/rollback.
+    - We can specify `FOR UPDATE no wait` if we want current session to fail fast with "resource busy" error instead of hanging, if the record is locked by other seesion.
     
     
 
