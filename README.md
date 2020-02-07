@@ -71,7 +71,21 @@
     
     
 ## DDL(Data definition Language) : CREATE, ALTER, DROP, RENAME, TRUNCATE)
-   - 
+   - Table naming convention: (A-Z, a-z, _, $, #), no reserved oracle keywords.
+   -  **Datatypes**:
+      - varchar2(size), MAX- 4000 bytes: It occupies space equal to length of characters stored. Passing size is mandatory.
+      - char(size), MAX- 2000: It always occupies space equal to size.
+      - Number(p,s), Precision=1 to 38, scale= -84 to 127: Precision total number of decimal digits. Scale number of digits to the right of decimal point. ex: Number(5,3)- 500(not valid), 1.34(valid), 1.345678(valid - decimal values upto scale will be retained)
+      - Date : Date and time values to nearest second.
+      - Long: varchar data upto 2GB.
+      - CLOB: Stores characters upto 4GB * DB Block size(number of cols we can define a table 100).
+      - NCLOB: Handles unicode character.
+      - RAW: Stores binary data upto 4000 bytes.
+      - Long RAW: Stores binary data upto 2GB.
+      - BLOB: Stores binary data upto 4 GB.
+      
+      
+  
 
     
 
