@@ -40,6 +40,9 @@
    
 ## DML:
    - https://github.com/eshita19/oracle-db/blob/master/dml.sql
+
+## SET:
+   - https://github.com/eshita19/oracle-db/blob/master/set.sql
    
 
 ## Database Transactions:
