@@ -72,6 +72,7 @@
     
 ## DDL(Data definition Language) : CREATE, ALTER, DROP, RENAME, TRUNCATE)
    - Table naming convention: (A-Z, a-z, _, $, #), no reserved oracle keywords.
+   - Table names are case insensitive.
    -  **Datatypes**:
       - varchar2(size), MAX- 4000 bytes: It occupies space equal to length of characters stored. Passing size is mandatory.
       - char(size), MAX- 2000: It always occupies space equal to size.
