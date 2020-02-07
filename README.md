@@ -88,6 +88,15 @@
       - Timestamp: Date with fractional seconds.
       - Interval Year to Month: Stored as an interval of years and month. 1-2 : 1year 2months.
       - Interval Day to Second: days-hours-minutes-seconds.
+   - **Constraints**:
+     - Primary key: Specify a column or combination of column whose values should be unique per row.
+     - Foreign Key: Dependency on other table.
+     - Not Null: Column value cannot be null.
+     - Unique: Column value should be unique per row.
+     - Check: specify condition which should be true for row update.
+     
+   
+      
       
       
       
