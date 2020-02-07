@@ -83,6 +83,7 @@
       - RAW: Stores binary data upto 4000 bytes.
       - Long RAW: Stores binary data upto 2GB.
       - BLOB: Stores binary data upto 4 GB.
+      - ROWID: Base64 string representing unique address of row in its table.
       
       
   
