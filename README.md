@@ -84,6 +84,10 @@
       - Long RAW: Stores binary data upto 2GB.
       - BLOB: Stores binary data upto 4 GB.
       - ROWID: Base64 string representing unique address of row in its table.
+      - Timestamp: Date with fractional seconds.
+      - Interval Year to Month: Stored as an interval of years and month. 1-2 : 1year 2months.
+      - Interval Day to Second: days-hours-minutes-seconds.
+      
       
       
   
