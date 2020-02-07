@@ -70,7 +70,8 @@
     - We can specify `FOR UPDATE no wait` if we want current session to fail fast with "resource busy" error instead of hanging, if the record is locked by other seesion.
     
     
-## DDL
+## DDL(Data definition Language) : CREATE, ALTER, DROP, RENAME, TRUNCATE)
+   - 
 
     
 
