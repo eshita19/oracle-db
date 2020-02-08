@@ -17,3 +17,6 @@ CREATE TABLE EMP_TEST
    NAME VARCHAR(20) NOT NULL,
    ROLL_NUM VARCHAR(20) UNIQUE
    DEPT_ID VARCHAR(30) CONSTRAINT STUD_FK REFERENCES DEPARTMENT(DEPT_ID));
+                                                                
+                                                                
+                                                                
