@@ -11,6 +11,8 @@ CREATE TABLE EMP_TEST
 
 
 ---- CONSTRAINTS: UNIQUE, NULL, CHECK, PRIMARY, FOREIGN
+-- CHECK AND FOREIGN KEY CONSTRAINT CAN INSERT NULL VLAUES
+
  CREATE TABLE STUD
  ( STUD_ID VARCHAR(20) CONSTRAINT STUD_PK PRIMARY KEY,
    NUMBER MARKS CONSTRAINT STUD_MARKS_CHECK CHECK(MARKS >20),
@@ -18,5 +20,7 @@ CREATE TABLE EMP_TEST
    ROLL_NUM VARCHAR(20) UNIQUE
    DEPT_ID VARCHAR(30) CONSTRAINT STUD_FK REFERENCES DEPARTMENT(DEPT_ID));
                                                                 
+-- Check constraints
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME="STUD";                                                                
                                                                 
                                                                 
