@@ -149,6 +149,8 @@
    - Private area in memory/pointer to speed up query execution.
    - Implicit index : Primary key /Unique constraint column are always indexed.
    - If index is not present full table scan occurs.
+   - `CREATE INDEX EMP_IDX_NAME ON EMP(NAME)`;
+   - DICTIONARY TABLE: `USER_INDEXES`, `USER_IND_COLUMN`.
    
    
    
