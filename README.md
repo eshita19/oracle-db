@@ -128,7 +128,19 @@
    1. `COMMENT ON TABLE EMPLOYEES IS "COMMENT"` => `SELECT * FROM USER_TAB_COMMENTS WHERE TABLE_NAME='EMPLOYEES'`
    2. `COMMENT ON COLUMN EMPLOYEES SALARY IS "COMMENT"` => `SELECT * FROM USER_COL_COMMENTS`
   
-  
+ ## SEQUENCE
+   - Can be used to create primary key value. Incremented automatically.
+   - Can be used by multiple tables.
+   - Syntax: `CREATE SEQUENCE <SEQ_NAME>`.
+   - Options:
+     1. `Incremented by n`: interval between sequence values.
+     2. `Start with n`: specifies the first sequence number.
+     3. `CYCLE\NO CYCLE`: specified whether to restart sequence if max iss reached.
+     4. `CACHE\NO CACHE`: oracle pre-allocates and keeps value ready.
+     
+     
+     
+   
      
      
   
