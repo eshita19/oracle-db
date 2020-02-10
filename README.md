@@ -1,5 +1,14 @@
 # Oracle-db
 
+## Tips:
+  - Distinct used only once and in the begining.
+  - char datatype can be created without specifying size. It will take default 1. For varchar we need to specify.
+  - Null comes last in order asc. In order to move it first use "Nulls First" with order by.
+  - We can use expressions(salary*100), alias, columns not in select in order by clause.
+  - select replace('eshita','ita') from dual; --Since the 3rd arg is not specified, it will replace by ''
+  - select trim('ta' from 'eshitaaa') from dual; -- Can specify ony on character for trim
+  - 
+
 ## Entity Relationship Model : 
    - It is used to display all the relationships.
    - Entity: Table, Attributes: Columns of Table, Relationship: Foreign References to other tables( 1:1, 1:*, *:1)
