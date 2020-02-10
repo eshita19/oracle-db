@@ -119,8 +119,9 @@
      - Table constraints.
      - Oracle users info.
   - Structure: It consists of base tables and views from base tables. sys user is owner. We can access info from the views.
-  - View naming convention: USER_:Created by you, All_: Created by you + accessible views, DBA_: DBA views, V$: performance tables.
+  - View naming convention: USER_OBJECTS:Created by you, All_OBJECTS: Created by you + accessible views, DBA_: DBA views, V$: performance tables.
   - All the dictionary views stored in table `DICTIONARY` => `SELECT * FROM DICTIONARY WHERE TABLE_NAME LIKE '%USER_TAB%';
+  - USER_CATALOG: subset of user_objects, dictionary containing table_name, table_type, table_view, index and synonyms.
      
      
   
