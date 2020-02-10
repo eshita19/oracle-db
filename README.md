@@ -83,7 +83,7 @@
     - `SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = 100 FOR UPDATE`: Using `For UPDATE`, the record will be locked even with select statement. So no other sesssion can manipulate record. It will be unlocked only when the previous session calls commit/rollback.
     - We can specify `FOR UPDATE no wait` if we want current session to fail fast with "resource busy" error instead of hanging, if the record is locked by other seesion.
     
-    
+    , 
 ## DDL(Data definition Language) : CREATE, ALTER, DROP, RENAME, TRUNCATE)
    - Table naming convention: (A-Z, a-z, _, $, #), no reserved oracle keywords.
    - Table names are case insensitive.
@@ -108,7 +108,21 @@
      - Not Null: Column value cannot be null.
      - Unique: Column value should be unique per row.
      - Check: specify condition which should be true for row update.
+
+
+## Data Dictionary:
+  - User data stored in tables.
+  - Oracle stores metadata  of these tables in Data dictionary.
+  - We have read-only access to Data dictionary. 
+  - It has:
+     - Definitions of all schema objects(table, views, indexes, synonyms, sequences, procedures, functions, packages, triggers and so on.
+     - Table constraints.
+     - Oracle users info.
+  - Structure: It consists of base tables and views from base tables. sys user is owner. We can access info from the views.
+  - View naming convention: USER_:Created by you, All_: Created by you + accessible views, DBA_: DBA views, V$: performance tables.
      
+     
+  
    
       
       
