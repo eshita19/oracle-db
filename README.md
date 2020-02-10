@@ -7,7 +7,8 @@
   - We can use expressions(salary*100), alias, columns not in select in order by clause.
   - select replace('eshita','ita') from dual; --Since the 3rd arg is not specified, it will replace by ''
   - select trim('ta' from 'eshitaaa') from dual; -- Can specify ony on character for trim
-  - 
+  - `SELECT AVG(DECODE(DEPARTMENT_ID, 90, SALARY, NULL)) FROM EMPLOYEES; ` == `SELECT AVG(SALARY) FROM HR.EMPLOYEES WHERE DEPARTMEENT_ID =90;`
+  - `Long` column cannot be assigned any constraint except `Not null`. We cannot use Long in `order by` and `group by`.
 
 ## Entity Relationship Model : 
    - It is used to display all the relationships.
