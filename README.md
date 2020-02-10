@@ -9,6 +9,10 @@
   - select trim('ta' from 'eshitaaa') from dual; -- Can specify ony on character for trim
   - `SELECT AVG(DECODE(DEPARTMENT_ID, 90, SALARY, NULL)) FROM EMPLOYEES; ` == `SELECT AVG(SALARY) FROM HR.EMPLOYEES WHERE DEPARTMEENT_ID =90;`
   - `Long` column cannot be assigned any constraint except `Not null`. We cannot use Long in `order by` and `group by`.
+  - We can use expressions for Group by clause. For date expression should match the one in select.
+  - The alternate value for NVL should be of same datatype.
+  - Implicit conversion from character to date only happens if day, year in numeric and month in char format.
+  - Create copy of table without copying data: `CREATE TABLE EMP_COPY AS SELECT * FROM EMP WHERE 1=2`.
 
 ## Entity Relationship Model : 
    - It is used to display all the relationships.
