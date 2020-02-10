@@ -122,8 +122,12 @@
   - View naming convention: USER_OBJECTS:Created by you, All_OBJECTS: Created by you + accessible views, DBA_: DBA views, V$: performance tables.
   - All the dictionary views stored in table `DICTIONARY` => `SELECT * FROM DICTIONARY WHERE TABLE_NAME LIKE '%USER_TAB%';
   - USER_CATALOG/CAT(synonymn): Subset of user_objects, dictionary containing table_name, table_type, table_view, index and synonyms.
-  - USER_TABLES/TABS(synonymn): Metadata of User tables.
-  - USER_TAB_COLUMNS: Metadata of user table columns.
+  - USER_TABLES/TABS(synonymn): Metadata of User tables, USER_TAB_COLUMNS: Metadata of user table columns.
+  - USER_CONSTRAINTS: constraint definition, USER_CONS_CONSTRAINTS:Columns constraints.
+ - Adding comments to table: 
+   1. `COMMENT ON TABLE EMPLOYEES IS "COMMENT"` => `SELECT * FROM USER_TAB_COMMENTS WHERE TABLE_NAME='EMPLOYEES'`
+   2. `COMMENT ON COLUMN EMPLOYEES SALARY IS "COMMENT"` => `SELECT * FROM USER_COL_COMMENTS`
+  
   
      
      
