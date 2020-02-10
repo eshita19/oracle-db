@@ -151,6 +151,11 @@
    - If index is not present full table scan occurs.
    - `CREATE INDEX EMP_IDX_NAME ON EMP(NAME)`;
    - DICTIONARY TABLE: `USER_INDEXES`, `USER_IND_COLUMN`.
+   - When to create index:
+     1. Data is of wide range in table.
+     2. The column in not frequently updated.
+     3. The column appears in where clause.
+     4. The output of any query is less than 2% to 4% of entire data.
    
    
    
