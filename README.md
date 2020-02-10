@@ -122,7 +122,8 @@
   - View naming convention: USER_OBJECTS:Created by you, All_OBJECTS: Created by you + accessible views, DBA_: DBA views, V$: performance tables.
   - All the dictionary views stored in table `DICTIONARY` => `SELECT * FROM DICTIONARY WHERE TABLE_NAME LIKE '%USER_TAB%';
   - USER_CATALOG/CAT(synonymn): Subset of user_objects, dictionary containing table_name, table_type, table_view, index and synonyms.
-  - USER_TABLES/TABS: Metadata of User tables.
+  - USER_TABLES/TABS(synonymn): Metadata of User tables.
+  - USER_TAB_COLUMNS: Metadata of user table columns.
   
      
      
