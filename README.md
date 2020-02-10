@@ -147,7 +147,7 @@
  ## INDEXES:
    - https://github.com/eshita19/oracle-db/edit/master/misc.sql
    - Private area in memory/pointer to speed up query execution.
-   - Implicit index : Primary key are always indexed.
+   - Implicit index : Primary key /Unique constraint column are always indexed.
    - If index is not present full table scan occurs.
    
    
