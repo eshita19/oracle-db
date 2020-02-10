@@ -138,6 +138,14 @@
      3. `CYCLE\NO CYCLE`: specified whether to restart sequence if max iss reached.
      4. `CACHE\NO CACHE`: oracle pre-allocates and keeps value ready.
      
+ ## SYNONYM: 
+   - Can create alternate name for database object: tables, views, triggers and others.
+   - `CREATE SYNONYM E1 FOR HR.EMPLOYEES;`
+   
+   
+   
+ 
+     
      
      
    
