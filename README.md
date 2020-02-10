@@ -129,6 +129,7 @@
    2. `COMMENT ON COLUMN EMPLOYEES SALARY IS "COMMENT"` => `SELECT * FROM USER_COL_COMMENTS`
   
  ## SEQUENCE
+   - https://github.com/eshita19/oracle-db/edit/master/misc.sql
    - Can be used to create primary key value. Incremented automatically.
    - Can be used by multiple tables.
    - Syntax: `CREATE SEQUENCE <SEQ_NAME>`.
@@ -139,6 +140,7 @@
      4. `CACHE\NO CACHE`: oracle pre-allocates and keeps value ready.
      
  ## SYNONYM: 
+   - https://github.com/eshita19/oracle-db/edit/master/misc.sql
    - Can create alternate name for database object: tables, views, triggers and others.
    - `CREATE SYNONYM E1 FOR HR.EMPLOYEES;`
    
