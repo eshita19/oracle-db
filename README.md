@@ -142,7 +142,13 @@
  ## SYNONYM: 
    - https://github.com/eshita19/oracle-db/edit/master/misc.sql
    - Can create alternate name for database object: tables, views, triggers and others.
-   - `CREATE SYNONYM E1 FOR HR.EMPLOYEES;`
+   - `CREATE SYNONYM E1 FOR HR.EMPLOYEES;`.
+ 
+ ## INDEXES:
+   - https://github.com/eshita19/oracle-db/edit/master/misc.sql
+   - Private area in memory/pointer to speed up query execution.
+   - Implicit index : Primary key are always indexed.
+   - If index is not present full table scan occurs.
    
    
    
