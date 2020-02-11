@@ -108,6 +108,9 @@
      - Not Null: Column value cannot be null.
      - Unique: Column value should be unique per row.
      - Check: specify condition which should be true for row update.
+   - We can defer the constraint check to end of DML commit using `DEFERRABLE INITIALLY DEFERRED` in Alter stmt.
+   - **Global Temporary Table**: Create temp table for a only a particular session: `CREATE GLOBAL TEMPORARY TABLE CART
+( ITEM_NO NUMBER)`
 
 
 ## Data Dictionary:
