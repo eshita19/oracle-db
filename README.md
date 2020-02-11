@@ -164,7 +164,8 @@
   - SYNTAX: `CREATE [OR REPLACE] VIEW <VIEW NAME> AS <SUBQUERY> [WITH READ ONLY]/[WITH CHECK];`
   - We cannot perform DML operations in a view if it contains: GROUP BY, PSEUDO COLUMN, GROUP FUNCTIONS.
    
-   
+
+ 
  
      
      
