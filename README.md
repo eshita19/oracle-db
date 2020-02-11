@@ -156,7 +156,12 @@
      2. The column in not frequently updated.
      3. The column appears in where clause.
      4. The output of any query is less than 2% to 4% of entire data.
-   
+
+## Views
+  - Subset of data from one or more tables.
+  - Views created from complex queries, can be used to fetch data using simple query to view.
+  - To restrict data access.
+  - SYNTAX: `CREATE/REPLACE VIEW <VIEW NAME> AS <SUBQUERY>;`
    
    
  
