@@ -161,8 +161,8 @@
   - Subset of data from one or more tables.
   - Views created from complex queries, can be used to fetch data using simple query to view.
   - To restrict data access.
-  - SYNTAX: `CREATE/REPLACE VIEW <VIEW NAME> AS <SUBQUERY>;`
-  - We cannot remove rows from view if it contains: GROUP BY, PSEUDO COLUMN, GROUP FUNCTIONS.
+  - SYNTAX: `CREATE [OR REPLACE] VIEW <VIEW NAME> AS <SUBQUERY> [WITH READ ONLY]/[WITH CHECK];`
+  - We cannot perform DML operations in a view if it contains: GROUP BY, PSEUDO COLUMN, GROUP FUNCTIONS.
    
    
  
