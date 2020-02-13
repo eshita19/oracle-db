@@ -82,6 +82,8 @@
   - **Locking the record using SELECT**:
     - `SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = 100 FOR UPDATE`: Using `For UPDATE`, the record will be locked even with select statement. So no other sesssion can manipulate record. It will be unlocked only when the previous session calls commit/rollback.
     - We can specify `FOR UPDATE no wait` if we want current session to fail fast with "resource busy" error instead of hanging, if the record is locked by other seesion.
+    - Transaction isolation levels: https://docs.oracle.com/cd/B19306_01/server.102/b14220/consist.htm
+    - https://www.geeksforgeeks.org/dbms/#tcc
     
     , 
 ## DDL(Data definition Language) : CREATE, ALTER, DROP, RENAME, TRUNCATE)
