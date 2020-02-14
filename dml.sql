@@ -70,5 +70,21 @@ WHERE EMPLOYEE_ID IN (SELECT EMPLOYEE_ID FROM HR.EMPLOYEES)
 TRUNCATE TABLE HR.EMPLOYEES.
 
 
+-------------MERGE INTO--------------------
+/*
+MERGE INTO target_table 
+USING source_table 
+ON search_condition
+    WHEN MATCHED THEN
+        UPDATE SET col1 = value1, col2 = value2,...
+        WHERE <update_condition>
+        [DELETE WHERE <delete_condition>]
+    WHEN NOT MATCHED THEN
+        INSERT (col1,col2,...)
+        values(value1,value2,...)
+        WHERE <insert_condition>;
+*/        
+
+
 
 
