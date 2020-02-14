@@ -84,7 +84,10 @@ ON search_condition
         values(value1,value2,...)
         WHERE <insert_condition>;
 */        
-
+MERGE INTO CUICREPORTDEFINITIONFIELD AS rdf USING CUICREPORTDEFINITION AS rd
+ON rdf.parentrptdefid = rd.id AND rd.TYPE != 'SQUERY'
+AND rdf.filterfield = 't'
+WHEN MATCHED THEN DELETE;
 
 
 
