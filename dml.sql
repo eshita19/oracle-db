@@ -90,4 +90,23 @@ AND rdf.filterfield = 't'
 WHEN MATCHED THEN DELETE;
 
 
+----------------TRIGGERS---------------------------
+/*
+CREATE [OR REPLACE] TRIGGER trigger_name
+{BEFORE | AFTER } triggering_event ON table_name
+[FOR EACH ROW]
+[FOLLOWS | PRECEDES another_trigger]
+[ENABLE / DISABLE ]
+[WHEN condition]
+DECLARE
+    declaration statements
+BEGIN
+    executable statements
+EXCEPTION
+    exception_handling statements
+END;
+*/
+
+
+
 
