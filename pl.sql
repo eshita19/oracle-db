@@ -6,8 +6,12 @@ BEGIN
     FROM HR.EMPLOYEES
     WHERE EMPLOYEE_ID = 100;
     
-    DBMS_OUTPUT.put_line(l_NAME);
-   -- l_number := 1/0;
+    IF L_NAME LIKE '%ESHITA%' THEN
+        DBMS_OUTPUT.put_line('NAME IS ESHITA');
+    ELSE
+         DBMS_OUTPUT.put_line('MAY BE STEVEN');
+    END IF;  
+  
     EXCEPTION
         WHEN ZERO_DIVIDE THEN
             DBMS_OUTPUT.put_line(SQLERRM);
