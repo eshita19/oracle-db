@@ -1,9 +1,13 @@
 DECLARE
-    l_message varchar(20) := 'Eshita';
-    l_number number;
+    l_NAME HR.EMPLOYEES.FIRST_NAME%TYPE;
 BEGIN 
-    l_number := 1/0;
-    DBMS_OUTPUT.put_line(l_message);
+    SELECT FIRST_NAME 
+    INTO l_NAME
+    FROM HR.EMPLOYEES
+    WHERE EMPLOYEE_ID = 100;
+    
+    DBMS_OUTPUT.put_line(l_NAME);
+   -- l_number := 1/0;
     EXCEPTION
         WHEN ZERO_DIVIDE THEN
             DBMS_OUTPUT.put_line(SQLERRM);
