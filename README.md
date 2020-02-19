@@ -21,6 +21,7 @@
 ## Oracle Setup:
    - Cloud DB: https://livesql.oracle.com/
    - Docker: 
+     -  https://www.oracle.com/technical-resources/articles/cloud/deploy-database-in-container-cloud.html
      - docker login
      - Run container: docker run -d -it --name <Oracle-DB> store/oracle/database-enterprise:12.2.0.1
      - User name / PWD: sys/Oradoc_db1
